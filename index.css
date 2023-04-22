@@ -1,13 +1,36 @@
 html, body {
-    margin: 0px;
+    margin: 20px 0px;
     padding: 0px;
-    font-family: "Rubik", sans-serif;
-    text-align:center;
+    font-family: "Rubik", sans-serif;    
     background-color: #f8f9fb;
+    font-size: 18px;
+    user-select: none;
+}
+
+ul {
+    padding: 0px;
+    flex-wrap: wrap;
+    display:flex;
+    gap: 10px;
+}
+
+ul li {
+    box-shadow: 0px 1px  4px rgba(0, 0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    list-style-type: none;
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align:center;
+}
+
+ul li:hover { 
+    background-color: #e84a41;
+    color: #FFFFFF;
 }
 
 input {
-    font-size: 20px;
+    font-size: inherit;
     padding: 10px;
     border: 0px solid;
     border-radius: 8px;
@@ -25,6 +48,8 @@ button {
     font-size: 18px;
 }
 
+
+
 .container {
     display:flex;
     flex-direction: column;
@@ -40,6 +65,10 @@ img {
 #add-button {
     background-color: #587058;
     color: #FFFFFF;
+}
+
+#add-button:hover {
+    background-color: #3c4d3c;
 }
 
 .item {

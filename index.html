@@ -1,23 +1,33 @@
 <!doctype html>
 <html>
     <head>
-        <title>Add to Cart</title>
+        <title>Lista de Compras</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
         <link rel="stylesheet" href="index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <script type="module" src="index.js"></script>
     </head>
     <body>
         <div class="container">
-            <h1>New App</h1>
+            <img src="assets/android-chrome-192x192.png">
 
             <input type="text" id="input-field">
-            <button id="add-button" onclick="addItem()">Add to cart</button>
+            <button id="add-button">Add to cart</button>
             
-            No items yet
+            <ul id="shopping-list">
+                
+            </ul>
 
-            <script type="module" src="functions.js"></script>
-            <script type="module" src="index.js"></script>
+            <!--script type="module" src="functions.js"></script-->
+            
         </div>
     </body>
 </html>
