@@ -37,7 +37,7 @@ onValue(itemsInDB, function(snapshot) {
     
 })
 
-addButton.addEventListener("dblclick", function () {
+addButton.addEventListener("click", function () {
     var item = inputFieldValue.value;
     
     push(itemsInDB, item);    
@@ -61,7 +61,7 @@ function addItemToList(itemID, itemValue) {
     let newElement = document.createElement("li")
     newElement.textContent = itemValue
 
-    newElement.addEventListener("click", function() {
+    newElement.addEventListener("dblclick", function() {
         let exactLocationItem = ref(database, `movies/${itemID}`)
         
         remove(exactLocationItem); 
