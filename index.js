@@ -37,7 +37,7 @@ onValue(itemsInDB, function(snapshot) {
     
 })
 
-addButton.addEventListener("click", function () {
+addButton.addEventListener("dblclick", function () {
     var item = inputFieldValue.value;
     
     push(itemsInDB, item);    
