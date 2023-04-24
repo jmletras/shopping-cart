@@ -1,6 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
-import { getMessaging } from "firebase/messaging";
  
 const appSettings = {
     databaseURL: "https://shopping-app-dc4f7-default-rtdb.europe-west1.firebasedatabase.app/"
