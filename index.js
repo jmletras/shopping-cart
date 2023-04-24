@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { getMessaging } from "firebase/messaging";
  
 const appSettings = {
     databaseURL: "https://shopping-app-dc4f7-default-rtdb.europe-west1.firebasedatabase.app/"
@@ -7,7 +8,7 @@ const appSettings = {
 
 const app = initializeApp(appSettings)
 const database = getDatabase(app)
-const itemsInDB = ref(database, "movies")
+const itemsInDB = ref(database, "items")
 
 const shoppingList = document.getElementById("shopping-list");
 const inputFieldValue = document.getElementById("input-field");
@@ -59,7 +60,7 @@ function addItemToList(itemID, itemValue) {
     newElement.textContent = itemValue
 
     newElement.addEventListener("dblclick", function() {
-        let exactLocationItem = ref(database, `movies/${itemID}`)
+        let exactLocationItem = ref(database, `items/${itemID}`)
         
         remove(exactLocationItem); 
         

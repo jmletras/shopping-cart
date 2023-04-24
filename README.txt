@@ -7,3 +7,6 @@ https://www.colorcombos.com/color-schemes/27/ColorCombo27.html
 #587498 - Blue
 #E86850 - Red
 #f8f9fb - Background
+
+#TODO
+- Notifications
