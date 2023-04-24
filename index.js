@@ -42,7 +42,6 @@ addButton.addEventListener("click", function () {
     
     push(itemsInDB, item);    
     
-    //addItemToList(item)
     clearInputField()
     
 });
@@ -56,8 +55,6 @@ function clearItemList() {
 }
 
 function addItemToList(itemID, itemValue) {
-    //shoppingList.innerHTML += `<li class="itemBullet" id="${ itemID }">${ itemValue }</li>`
-
     let newElement = document.createElement("li")
     newElement.textContent = itemValue
 
