@@ -14,6 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
         <script type="module" src="index.js"></script>
+        
     </head>
     <body>
         <div class="container">
@@ -25,5 +26,18 @@
             <ul id="shopping-list"></ul>
             
         </div>
+        <div id="token_div" style="display: none;">
+            <h4>Registration Token</h4>
+            <p id="token" style="word-break: break-all;"></p>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+                    onclick="deleteToken()">Delete Token</button>
+        </div>
+        <div id="permission_div" style="display: none;">
+            <h4>Needs Permission</h4>
+            <p id="token"></p>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+                    onclick="requestPermission()">Request Permission</button>
+          </div>
+          <div id="messages"></div>
     </body>
 </html>
